@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    
+    body{
+      height: 3000px;
+      margin: 0;
+      padding: 0;
+    }
+
+    div{
+      font-family: Arial;
+      
+    }
+
+    .sidebar1{
+      position: fixed;
+      left: 0;
+      top: 0;
+      bottom: 0; 
+      width: 80px;
+      background-color: rgb(33, 33, 33);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 20px;
+    }
+
+    .img{
+      height: 70px;
+      width: 70px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    .sidebar2{
+      position: fixed;
+      left: 80px;
+      top: 0;
+      bottom: 0; 
+      width: 120px;
+      background-color: rgb(55, 55, 55);
+      padding-top: 15px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    .flex{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .info{
+      font-size: 14px;
+      color: white;
+    }
+
+    .plus{
+      color: rgb(150, 150, 150);
+      font-size: 25px;
+    }
+    .channel{
+      color: rgb(150, 150, 150);
+      margin-bottom: 16px;
+    }
+
+
+
+  </style>
+
+</head>
+<body>
+  
+  <div class = "sidebar1">
+    <div>
+      <img class = "img" src = "thumbnails/gfyggg_heJvGlB.png">
+    </div>
+    <div>
+      <img class = "img" src = "thumbnails/gfyggg_heJvGlB.png">
+    </div>
+    <div>
+      <img class = "img" src = "thumbnails/gfyggg_heJvGlB.png">
+    </div>
+  </div>
+
+
+
+  <div class = "sidebar2">
+    <div class = "flex">
+      <div class = "info">INFO</div>
+      <div class = "plus">+</div>
+    </div>
+    <div class = "channel"># new-videos</div>
+    <div class = "channel"># updates</div>
+    <div class = "channel"># faq</div>
+    
+  </div>
+
+</body>
+</html>

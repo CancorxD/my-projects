@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+
+    .Zetka{
+      width: 200px;
+      margin: 50px 0px;
+      border-radius: 5px;
+    }
+    .Zetka2{
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      margin: 50px 0px;
+    }
+    .Zetka3{
+      width: 200px;
+      height: 200px;
+      border-radius: 5px;
+      margin: 50px 0px;
+      object-fit: cover;
+      border-radius: 100px;
+    }
+
+    .textbox-2{
+      box-shadow: 5px 5px 15px rgba(0,0,0,0.15);
+      margin: 20px 0px;
+      width: 350px;
+      border: none;
+      border-radius: 10px;
+    }
+    p{
+      font-family: Arial;
+    }
+
+    .thumbnail{
+    width: 300px;
+    height: 300px;
+    object-fit: cover; /*cover занимает все но обрезает картинку, fit подстраивает под размеры, но размер самой картинки меньше */
+    object-position: right;
+    border-width: 2px;
+    border-style: solid;
+    border-color: red;
+  }
+
+    .button-1{
+      border: none;
+      border-radius: 25px;
+      background-color: blue;
+      margin: 20px 0px;
+      color: white;
+      font-family: Arial;
+      padding: 15px 155px;
+      font-weight: bold;
+    }
+
+    .button-2{
+      border: none;
+      background-color: blue;
+      color: white;
+      font-weight: bold;
+      border-radius: 10px;
+      padding: 4px 13px;
+    }
+
+    .Zetka4{
+      width: 30px;
+      height: 30px;
+      border-radius: 15px;
+      object-fit: cover;
+      vertical-align: middle;
+    }
+    .text-1{
+      margin-left: 10px;
+      margin-right:75px;
+      vertical-align: middle;
+      display: inline-block;
+      color: gray;
+    }
+
+    .tweet-box{
+      border: solid grey;
+      width: 340px;
+      border-radius: 15px;
+      box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+    }
+
+  </style>
+</head>
+<body>
+  <img class = "thumbnail" src = "thumbnails/thumbnail-1.webp"><br>
+  <img class = "Zetka" src = "thumbnails/gfyggg_heJvGlB.png"><br>
+  <img class = "Zetka2" src = "thumbnails/gfyggg_heJvGlB.png"> <br>
+  <img class = "Zetka3" src = "thumbnails/gfyggg_heJvGlB.png"><br>
+  <input style = "border-radius: 5px; margin: 20px 0px;" placeholder = "Search"> <br>
+  <input class = "textbox-2" placeholder = "Search Google or type a URL"><br>
+  <input type = "checkbox"><br>
+  <p>Email</p>
+  <input style = "width: 360px">
+  <p>By clicking Agree&Join, you agree to Privacy Policy.</p>
+  <button class = "button-1">Agree&Join</button><br>
+  <div class = "tweet-box">
+    <img class = "Zetka4" src = "thumbnails/gfyggg_heJvGlB.png">
+    <p class = "text-1">What's happening?</p>
+    <button class = "button-2">Tweet</button>
+  </div>
+  
+</body>
+</html>

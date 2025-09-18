@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  .one-button{
+    background-color: black;
+    color: white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right:16px;
+    margin: 5px;
+    cursor: pointer;
+    transition: opacity 0.15s;
+  }
+
+  .one-button:hover{
+    opacity: 0.8;
+  }
+
+  .two-button{
+    background-color: yellow;
+    color: black;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right:16px;
+    margin: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.15s;
+  }
+
+  .two-button:hover{
+    background-color: rgba(251, 177, 17, 0.889);
+  }
+  .three-button{
+    background-color: green;
+    color: white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right:16px;
+    margin: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    border-radius: 2px;
+    transition: box-shadow 0.15s;
+  }
+
+  .three-button:hover{
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.15);
+  }
+  .four-button{
+    background-color: purple;
+    color: white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right:16px;
+    margin: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 2px;
+    border: none;
+    transition: background-color 0.15s;
+  }
+
+  .four-button:hover{
+    background-color: rgb(84, 12, 152);
+  }
+  .five-button{
+    background-color: white;
+    color: rgba(108, 117, 125, 1);
+    border-color: rgb(108, 117, 125);
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right:16px;
+    margin: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 2px;
+    transition: color 0.15s, background-color 0.15s;
+  }
+
+  .five-button:hover{
+    color: white;
+    background-color:rgb(108, 117, 125) ;
+  }
+  .six-button{
+    background-color: blue;
+    color: white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right:16px;
+    margin: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+    transition: 0.15s;
+  }
+
+  .six-button:hover{
+    background-color: rgb(6, 6, 112);
+  }
+  .seven-button{
+    background-color: white;
+    color: blue;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right:16px;
+    margin: 5px;
+    cursor: pointer;
+    border-color: blue;
+    border-radius: 15px;
+    font-weight: bold;
+    border: 1px solid;
+    transition: background-color 0.15s, border-width 0.15s;
+
+  }
+
+  .seven-button:hover{
+    border-width: 2px;
+    background-color: rgb(199, 212, 227);
+  }
+
+  .eight-button{
+    background-color: yellow;
+    color: black;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right:16px;
+    margin: 3px;
+    border:none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.15s, opacity 0.15s;
+  }
+
+  .eight-button:hover{
+    background-color: rgb(227, 227, 3);
+  }
+
+  .eight-button:active{
+    opacity: 0.7;
+  }
+  .nine-button{
+    background-color: orange;
+    color: black;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right:16px;
+    margin: 3px;
+    border:none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.15s, opacity 0.15s;
+  }
+  
+  .nine-button:hover{
+    background-color: rgb(230, 149, 0);
+  }
+
+  .nine-button:active{
+    opacity: 0.7;
+  }
+
+  .one-link{
+    color: blue;
+    transition: color 0.15s;
+  }
+
+  .one-link{
+    color: orange;
+  }
+  .one-p{
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .two-p{
+    color: green;
+    font-weight: bold;
+  }
+  
+  
+</style>
+<body>
+  <button class = "one-button">Request now</button>
+  <button class = "two-button">Add to Cart</button>
+  <button class = "three-button">Sign up</button>
+  <br>
+  <button class = "four-button">Get started</button>
+  <button class = "five-button">Download</button>
+  <button class = "six-button">Apply on company website</button>
+  <button class = "seven-button">Save</button>
+
+  <br><br>
+
+  <a href = "https://www.amazon.com/" target = "blank" class = "one-link">
+    Back to Amazon
+  </a>
+  <p class = "one-p">Nike Black Running Shoes</p>
+  <p class = "two-p">39$ - in stock</p>
+  <p class = "tree-p">Free deliery tomorrow</p>
+  <button class = "eight-button">Add to Cart</button>
+  <button class = "nine-button">Buy now</button>
+
+
+</body>
+</html>

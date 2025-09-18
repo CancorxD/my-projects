@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body style="
+  height: 3000px;
+  padding-top: 60px;   /* чтобы контент не залезал под header */
+  padding-left: 80px;  /* чтобы контент не залезал под sidebar */
+  margin: 0;
+">
+
+  <!-- Хедер -->
+  <div style="
+    background-color: black;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    z-index: 10; /* поднял выше сайдбара */
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+  ">
+    header
+  </div>
+
+  <!-- Сайдбар -->
+  <div style="
+    background-color: green;
+    color: white;
+    position: fixed;
+    left: 0;
+    top: 50px;   /* начинается после хедера */
+    bottom: 0;
+    width: 72px;
+  ">
+    <!-- Крестик -->
+    <div style="
+      position: absolute;
+      background-color: red;
+      color: white;
+      top: 0px;
+      right: 0px;
+      z-index: 20;
+      cursor: pointer;
+      padding: 2px 6px;
+    ">
+      X
+    </div>
+    sidebar
+  </div>
+
+  <!-- Контент -->
+  <div style="
+    background-color: lightblue;
+    height: 200px;
+    width: 200px;
+    margin-top: 100px;
+  ">div1</div>
+
+  <div style="
+    background-color: lightpink;
+    height: 200px;
+    width: 200px;
+    position: relative;
+  ">
+  <div style="
+      position: relative;
+      background-color: red;
+      color: white;
+      top: 0px;
+      right: 0px;
+      cursor: pointer;
+      padding: 2px 6px;
+    ">
+      relative
+    </div>
+  
+  div2</div>
+
+  <div style="
+      position: absolute;
+      background-color: red;
+      color: white;
+      top: 0px;
+      right: 0px;
+      z-index: 20;
+      cursor: pointer;
+      padding: 2px 6px;
+    ">
+      absoulte
+    </div>
+
+</body>
+</html>

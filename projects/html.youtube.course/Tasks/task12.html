@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    .img{
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      object-fit: cover;
+      padding: 3px 7px 0px 7px;
+    }
+    p{
+      margin: 0;
+      padding: 0;
+      font-family: Arial;
+    }
+    .container{
+      width: 450px;
+      box-shadow: 0px 0px 5px rgba(0,0,0,0.15);
+    }
+    .flex1{
+      display: flex;
+    }
+    .flex2{
+      display: flex;
+      margin-bottom: 2px;
+    }
+    .username{
+      font-weight: bold;
+      padding-right: 5px;
+    }
+    .username2{
+      color: gray;
+    }
+    .container2{
+      width: 360px;
+      border-radius: 20px;
+      border: solid 2px rgb(220, 220, 220);
+      margin-top: 10px;
+      margin-bottom: 15px;
+      overflow: hidden; /*если что-то выйдет за контерьер то пох*/
+    }
+    .flex3{
+      display: flex;
+    }
+    .column3{
+      width: 190px;
+      height: 100px;
+      background-color: rgb(220, 220, 220);
+    }
+    .website{
+      color: grey;
+      margin-bottom: 5px;
+    }
+    .column4{
+      padding-top: 15px;
+      padding-left: 12px;
+    }
+    .yap{
+      font-weight: bold;
+    }
+  </style>
+
+</head>
+<body>
+
+  <div class = "container">
+    <div class = "flex1">
+      <div class = "column1">
+        <img class = "img" src = "thumbnails/gfyggg_heJvGlB.png">
+      </div>
+      <div class = "column2">
+        <div class = "flex2">
+          <p class = "username">supersimple.dev</p>
+          <p class = "username2">@SuperSimpleDev</p>
+        </div>
+        <div>
+          <p>What is backend web development? a complete overview. New video is up!</p>
+        </div>
+        <div>
+          <div class = "container2">
+            <div class = "flex3">
+              <div class = "column3">
+              </div>
+              <div class = "column4">
+                <p class = "website">youtube.com</p>
+                <p class = "yap">Backend web development - a complete overview (2021)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+</body>
+</html>

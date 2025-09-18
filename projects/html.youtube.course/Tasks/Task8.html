@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    .red-square{
+      background-color: red;
+      width: 100px;
+      height: 100px;
+    }
+    p{
+      font-family: Arial;
+      margin-top: 0;
+      margin-bottom: 0px;
+    }
+    .green-circle{
+      background-color: green;
+      border-radius: 50px;
+      height: 100px;
+      width: 100px;
+    }
+    .service-box{
+      border: solid grey;
+      width: 500px;
+      height: 90px;
+      padding-left: 100px;
+    }
+    .youtube-music{
+      background-color: rgb(33, 33, 33);
+      width: 360px;
+      color: white; 
+      margin: 15px;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-bottom: 20px;
+      padding-top: 20px;
+    }
+    .title{
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .photo-box{
+      width:175px;
+      height: 270px;
+      border: none;
+      box-shadow: 0px 0px 5px rgba(0,0,0,0.3);  
+      display: inline-block;
+      margin-right: 20px;
+    }
+    .pfp-1{
+      object-fit: cover;
+      width:175px;
+      height:180px;
+      padding-left: 0px;
+    }
+    .name{
+      font-weight: bold;
+      padding-left: 5px;
+      margin-bottom: 3px;
+    }
+    .friends-count{
+      padding-left:5px;
+      color: rgb(100, 100, 100);
+      margin-bottom: 10px;
+      vertical-align: middle;
+    }
+    .add{
+      border: none;
+      cursor: pointer;
+      background-color: rgb(24, 119, 242);
+      color: white;
+      border-radius: 5px;
+      margin-left: 5px;
+      padding: 6px 15px;
+    }
+
+    .small-pfp{
+      width: 20px;
+      height: 20px;
+      border-radius: 15px;
+      object-fit: cover;
+      vertical-align: middle;
+    }
+
+    .small-pfp-container, .friends-count-container{
+      display: inline-block;
+      
+    }
+
+    .photo-boxes-grid{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 15px;
+    }
+
+    .small-pfp-friends-count-grid{
+      display: grid;
+      grid-template-columns:20px 1fr;
+      
+    }
+  </style>
+
+</head>
+<body>
+  <div class = "red-square"></div>
+  <div class = "green-circle"></div>
+
+  <div class = "service-box">
+    <p>Satisfied with our service?</p>
+    <button>Yes</button>
+    <button>No</button>
+  </div>
+
+  <div class = "youtube-music">
+    <p class = "title">Install Youtube Music</p>
+    <p style = "color: rgb(160, 160, 160);">Add Youtube Music to your desktop and easy access</p>
+  </div>
+
+
+  <div class = "photo-boxes-grid">
+
+  </div>
+
+
+  <div class = "photo-box">
+    <div>
+      <img src = "thumbnails/gfyggg_heJvGlB.png" class = "pfp-1">
+    </div>
+    <div>
+      <p class = "name">Oliver</p>
+    </div>
+    <div class = "small-pfp-friends-count-grid">
+      <div class = "small-pfp-container">
+        <img src = "thumbnails/gfyggg_heJvGlB.png" class = "small-pfp">
+      </div>
+      <div class = "friends-count-container">
+        <p class = "friends-count">2 mutual friends</p>
+      </div>
+    </div>
+    <div><button class = "add">Add Friend</button> </div>
+  </div>
+
+
+    <div class = "photo-box">
+    <div>
+      <img src = "thumbnails/thumbnail-1.webp" class = "pfp-1">
+    </div>
+    <div>
+      <p class = "name">Mimi</p>
+    </div>
+    <div>
+      <div class = "small-pfp-container">
+        <img src = "thumbnails/gfyggg_heJvGlB.png" class = "small-pfp">
+      </div>
+      <div class = "friends-count-container">
+        <p class = "friends-count">3 mutual friends</p>
+      </div>
+    </div>
+    <div><button class = "add">Add Friend</button> </div>
+  </div>
+
+
+  <div class = "photo-box">
+    <div>
+      <img src = "thumbnails/thumbnail-2.webp" class = "pfp-1">
+    </div>
+    <div>
+      <p class = "name">Rex</p>
+    </div>
+    <div>
+      <div class = "small-pfp-container">
+        <img src = "thumbnails/gfyggg_heJvGlB.png" class = "small-pfp">
+      </div>
+      <div class = "friends-count-container">
+        <p class = "friends-count">4 mutual friends</p>
+      </div>
+    </div>
+    <div><button class = "add">Add Friend</button> </div>
+  </div>
+
+
+</body>
+</html>
