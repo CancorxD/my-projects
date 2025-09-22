@@ -9,7 +9,7 @@
   
 
   <script>
-
+    
     console.log(typeof true);
 
     console.log(3 > 5 -5);
@@ -25,6 +25,40 @@
     else{
       console.log('zaeeeebal');
     }
+
+    if (0){
+      console.log('truthy');
+    }
+    //untrythy variables: undefined, null, 0, '' Nan
+    const cartQuantity = 5;
+
+    if (cartQuantity) {
+      console.log('cart has products');
+    }
+
+    console.log(!0);
+
+    console.log('text' / 5); //NaN
+
+    let variable1;
+    console.log(variable1); //undefined
+
+
+    const result = true ? "truthy" : 'falsy';  
+    console.log(result);
+    /*
+    if (true){
+      'truthy'
+    }
+      else{
+      'falsy'}
+    */
+
+    const message = false && 'hello';
+    console.log(message); //false
+
+    const currency = undefined || 'USD';
+    console.log(currency); //EUR
   </script>
 
 </body>
