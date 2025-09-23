@@ -10,15 +10,19 @@
 
   <script>
 
-    let randomNum = Math.random();
-
-    if (randomNum < 0.5){
-      console.log('heads')
-    }
-    else{
-      console.log('tales');
+    function function1(){
+      console.log('hello');
+      console.log(2+2);
     }
 
+    function1();
+
+
+    function calculateTax(cost, taxPercent = 0.1){
+      console.log(cost * taxPercent);
+    }
+
+    calculateTax(200  );
   </script>
 
 </body>
