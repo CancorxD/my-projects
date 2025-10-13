@@ -36,13 +36,13 @@
     }
 
     function convertLength(length, from, to){
-      if (from !== 'km' || from!== 'ft' || from !== 'miles'){
+      if (from !== 'km' && from!== 'ft' && from !== 'miles'){
         console.log(`invalid unit: ${from}`)
       }
-      if (to !== 'km' || to!== 'ft' || to !== 'miles'){
+      if (to !== 'km' && to!== 'ft' && to !== 'miles'){
         console.log(`invalid unit: ${to}`)
       }
-
+      
       if (from===to){
         return length + from;
       }
@@ -61,7 +61,7 @@
       if (to == 'km'){
         return length/3281+to;
       }
-      return length/5280 + to;
+      return length/5280 + to;  
     }
 
 
