@@ -26,8 +26,45 @@
 
   ">Scissors</button>
 
+  <p class = "js-result"></p>
+  <p class = "js-moves"></p>
+
+  <p class = "js-score"></p>
+
+  
+
+  <button onclick = "
+    score.wins = 0;
+    score.ties = 0;
+    score.looses = 0;
+    localStorage.removeItem('score');
+    updateScoreElement();
+  ">Reset score</button>
+
 
 <script>
+
+  let score =JSON.parse(localStorage.getItem('score')) 
+  || {
+  wins: 0,
+  losses: 0,
+  ties: 0
+};
+  /*
+  if (score === null) {
+    score = {
+      wins: 0,
+      losses: 0,
+      ties: 0
+    };
+  }
+    */
+
+    updateScoreElement();
+
+  
+
+  
 
   function playGame(playerMove){
     const computerMove = pickComputerMove();
@@ -44,8 +81,7 @@
         result = 'Tie'
       }
 
-      alert(`You picked scissors. Computer picked ${computerMove}. ${result}`);
-
+      
 
     }
     else if(playerMove === 'paper'){
@@ -60,7 +96,7 @@
         result = 'You lose'
       }
 
-      alert(`You picked paper. Computer picked ${computerMove}. ${result}`);
+      
     }
     
 
@@ -75,10 +111,44 @@
       else if (computerMove === 'scissors'){
         result = 'You win'
       }
-
-      alert(`You picked rock. Computer picked ${computerMove}. ${result}`);
     }
 
+      if (result === 'You win'){
+        score.wins += 1;
+        document.querySelector('.js-result')
+        .innerHTML = "You win"
+        updateScoreElement();
+      }
+      else if (result === 'You lose'){
+        score.looses += 1;
+        document.querySelector('.js-result')
+        .innerHTML = "You lose"
+        updateScoreElement();
+      }
+      else{
+        score.ties += 1;
+        document.querySelector('.js-result')
+        .innerHTML = "Tie"
+        updateScoreElement();
+      }
+
+      localStorage.setItem('score', JSON.stringify(score));
+
+
+
+      document.querySelector('.js-moves')
+      .innerHTML = `You picked rock. Computer picked ${computerMove}.`
+      updateScoreElement();
+      
+
+      
+      
+    }
+
+  function updateScoreElement(){
+    document.querySelector('.js-score')
+    .innerHTML = `Wins: ${score.wins}, Losses: ${score.looses}, 
+    Ties: ${score.ties}`;
   }
 
   function pickComputerMove(){
