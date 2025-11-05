@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <button>9a</button>
+  <button class = "b9">9b</button>
+
+
+  <br><br>
+  <button onclick = " 
+    headsTailsCHoose('heads');
+  ">heads</button>
+  <button onclick = " 
+    headsTailsCHoose('tails');
+  ">tails</button>
+  <p class = "results"></p>
+
+  <br><br>
+  <input placeholder = "Name" class = "name-input" onkeydown = "yourNameKeyDown(event)">
+  <button onclick = " 
+  yourName()
+  ">Submit</button>
+  <p class = "nameText"></p>
+  
+
+  <script>
+
+    function yourNameKeyDown(event){
+      if (event.key === "Enter"){
+        yourName();
+      }
+    }
+
+    function yourName(){
+      const name = document.querySelector(".name-input");
+      document.querySelector('.nameText')
+      .innerHTML = `Your name is: ${name.value}`;
+    }
+
+    function headsTailsCHoose(pick){
+      if (pick === "heads"){
+        document.querySelector(".results").innerHTML = 'You chose: heads';
+      }
+      else{
+        document.querySelector(".results").innerHTML = 'You chose: tails';
+      }
+    }
+
+    console.log(document.querySelector('button').innerHTML);
+    document.querySelector('.b9').innerHTML = '9b done';
+
+
+  </script>
+
+</body>
+</html>

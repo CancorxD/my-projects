@@ -23,7 +23,17 @@
   <button onclick = "calculateTotal()">Calculate</button>
   <p class = "js-total-cost"></p>
 
+  <br><br>
+
+  <input placeholder = "Type something" onkeyup = "constantTyping()" class = "textHolder">
+  <p class = "textOutput"></p>
+
   <script>
+    
+    function constantTyping(){
+      text = document.querySelector('.textHolder').value;
+      document.querySelector('.textOutput').innerHTML =  text;
+    }
 
     String(123); //making string
     console.log('25' - 5); //returning 20
@@ -31,7 +41,8 @@
 
     window.document
     window.console.log("window");
-
+    window.alert
+    
     function  handleCostKeydown(event){
       console.log(event.key);
       if (event.key === 'Enter'){ 
@@ -49,7 +60,7 @@
       }
 
       document.querySelector(".js-total-cost")
-      .innerHTML = `$${cost}`;
+      .innerHTML = `$${Number(cost.toFixed(2))}`;
     }
 
     function subscribe () {
