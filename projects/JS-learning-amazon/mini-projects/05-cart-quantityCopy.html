@@ -43,8 +43,19 @@
   <button onclick  ="
     updateCartQuantity(3, '-');
   ">-3</button>
+
+  <p class = "quantity_number"></p>
   <script>
-    let cartQuantity = 0;
+
+
+
+    let cartQuantity = JSON.parse(localStorage.getItem('cartQuantity')) || 
+    {
+      cartQuantity: 0
+    };
+
+    document.querySelector('.quantity_number')
+    .innerHTML = cartQuantity;
 
     function updateCartQuantity(number, condition = '+'){
       if (condition === '-') {
@@ -73,6 +84,10 @@
       console.log('Cart was reset.');
       console.log(`Cart quantity: ${cartQuantity}`);
     }
+    localStorage.setItem('cartQuantity', JSON.stringify(cartQuantity));
+
+    document.querySelector('.quantity_number')
+    .innerHTML = cartQuantity;
     
     
     }
